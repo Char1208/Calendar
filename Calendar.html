@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTO Appointment Setter</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Back</button>
+          <button id="nextButton">Next</button>
+          <!-- <h2>LTO Appointment Setter</h2> -->
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div> 
+        <div>Saturday</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>New Appointment</h2>
+        <div> 
+           <!-- <label for="appt-time">  -->
+            <!-- Choose an appointment time (opening hours 8:00am-4:00pm):  -->
+          <!-- </label>  -->
+          <!-- <input -->
+            <!-- id="appt-time" -->
+            <!-- type="time" -->
+            <!-- name="appt-time" -->
+            <!-- min="8:00" -->
+            <!-- max="4:00" -->
+            <!-- required /> -->
+          <!-- <span class="validity"></span> -->
+          
+          <input list="browser">
+
+          <datalist id="browser">
+            <option value="8:00-9:40am">  
+            <option value="9:40-10:40am">
+            <option value="10:00-11:40am">
+            <option value="11:40-12:40am">
+            <option value="12:00-1:40am">
+          </datalist>
+
+        
+        
+        <!-- <div>  -->
+        <!-- <input type="submit" value="Submit form" > -->
+        <!-- </div>  -->
+
+      <input id="eventTitleInput" placeholder="Description" >
+      <!-- <input id=""placeholder="Time" > -->
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+    </div>
+
+    <div id = "regButton1">
+      <button id="registerButton">Register</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+
+    <script src="./Calscript.js"></script>
+  </body>
+</html>
